@@ -1,3 +1,37 @@
 <resources>
-    <string name="app_name">RecriacaoInterfaceNubank</string>
+
+    <string name="app_name">MyNubank</string>
+
+    <string name="hello_name">Olá, Emanuel</string>
+
+    <string name="credit_card">Cartão de Crédito</string>
+    <string name="current_invoice">Fatura Atual</string>
+    <string name="invoice_value">R$ 999.999,99</string>
+    <string name="available_limit">Limite disponível</string>
+    <string name="available_limit_value">R$ 999.999,99</string>
+
+    <string name="account">Conta</string>
+    <string name="balance_available">Saldo disponível</string>
+    <string name="balance_available_value">R$ 999.999,99</string>
+
+    <string name="rewards">Rewards</string>
+    <string name="rewards_description">Apague compras com pontos que nunca expiram.</string>
+    <string name="know_button">Conhecer</string>
+
+    <string name="life_insurance">Seguro de vida</string>
+    <string name="life_insurance_description">Conheça Nubank Vida: um seguro simples e que cabe no seu bolso.</string>
+
+    <string name="pix">Pix</string>
+    <string name="pay">Pagar</string>
+    <string name="refer_friends">Indicar amigos</string>
+    <string name="transfer">Transferir</string>
+    <string name="deposit">Depositar</string>
+    <string name="virtual_card">Cartão virtual</string>
+    <string name="mobile_top_up">Recarga de celular</string>
+    <string name="adjust_limit">Ajustar limite</string>
+    <string name="lock_card">Bloquear cartão</string>
+    <string name="demand">Cobrar</string>
+    <string name="donation">Doação</string>
+    <string name="help_me">Me ajuda</string>
+
 </resources>

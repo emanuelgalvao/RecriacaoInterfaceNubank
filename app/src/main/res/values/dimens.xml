@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="hello_name_size">25sp</dimen>
+
+    <dimen name="card_title_size">18sp</dimen>
+    <dimen name="card_subtitle_size">14sp</dimen>
+    <dimen name="card_value_size">25sp</dimen>
+
+    <dimen name="card_title_size_20sp">20sp</dimen>
+    <dimen name="card_subtitle_size_16sp">16sp</dimen>
+
+    <dimen name="card_menu_size">15sp</dimen>
+    <dimen name="card_menu_width">100dp</dimen>
+
+    <dimen name="icon_size">22dp</dimen>
+
+</resources>

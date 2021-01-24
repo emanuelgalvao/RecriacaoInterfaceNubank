@@ -2,9 +2,23 @@
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_700">#66048d</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_background">#8905be</color>
+    <color name="card_menu_background">#9823c7</color>
+    
+    <color name="text_white">#ffffff</color>
+    <color name="text_grey">#969595</color>
+    <color name="invoice_blue">#24a0e8</color>
+    <color name="available_limit_green">#2f8250</color>
+    <color name="available_limit_red"></color>
+    <color name="text_purple">#8a05be</color>
+    <color name="text_black">#181818</color>
+
+    <color name="purple_button">#8a05be</color>
+
 </resources>
