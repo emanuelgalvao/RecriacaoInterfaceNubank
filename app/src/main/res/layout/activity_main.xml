@@ -38,6 +38,7 @@
                 android:gravity="end">
 
                 <LinearLayout
+                    android:id="@+id/btHideValues"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginEnd="10dp"
@@ -46,9 +47,11 @@
                     android:background="@drawable/round_shape">
 
                     <ImageView
+                        android:id="@+id/ivVisible"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/ic_visible" />
+                        android:src="@drawable/ic_invisible"
+                        android:contentDescription="@string/visible_accessibility" />
 
                 </LinearLayout>
 
@@ -61,7 +64,8 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/ic_configuration" />
+                        android:src="@drawable/ic_configuration"
+                        android:contentDescription="@string/configuration_accessibility" />
 
                 </LinearLayout>
 
@@ -105,7 +109,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_credit_card_grey" />
+                                android:src="@drawable/ic_credit_card_grey"
+                                android:contentDescription="@string/credit_card_accessibility" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -126,37 +131,47 @@
                             android:textColor="@color/text_grey"
                             android:textSize="@dimen/card_subtitle_size" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:text="@string/invoice_value"
-                            android:textColor="@color/invoice_blue"
-                            android:textSize="@dimen/card_value_size"
-                            android:textStyle="bold" />
-
                         <LinearLayout
+                            android:id="@+id/llInvoice"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="5dp"
-                            android:orientation="horizontal">
+                            android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/available_limit"
-                                android:textColor="@color/text_grey"
-                                android:textSize="@dimen/card_subtitle_size" />
-
-                            <TextView
+                                android:id="@+id/tvInvoiceValue"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginLeft="5dp"
-                                android:text="@string/available_limit_value"
-                                android:textColor="@color/available_limit_green"
-                                android:textSize="@dimen/card_subtitle_size"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/invoice_value"
+                                android:textColor="@color/invoice_blue"
+                                android:textSize="@dimen/card_value_size"
                                 android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/llAvailableLimit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/available_limit"
+                                    android:textColor="@color/text_grey"
+                                    android:textSize="@dimen/card_subtitle_size" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="@string/available_limit_value"
+                                    android:textColor="@color/available_limit_green"
+                                    android:textSize="@dimen/card_subtitle_size"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -180,7 +195,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_account" />
+                                android:src="@drawable/ic_account"
+                                android:contentDescription="@string/account_accessibility" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -201,13 +217,22 @@
                             android:textColor="@color/text_grey"
                             android:textSize="@dimen/card_subtitle_size" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="@string/balance_available_value"
-                            android:textColor="@color/text_black"
-                            android:textSize="@dimen/card_value_size"
-                            android:textStyle="bold" />
+                            <LinearLayout
+                                android:id="@+id/llBalance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvBalanceValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/balance_available_value"
+                                android:textColor="@color/text_black"
+                                android:textSize="@dimen/card_value_size"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -229,7 +254,8 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/ic_rewards" />
+                                android:src="@drawable/ic_rewards"
+                                android:contentDescription="@string/rewards_accessibility" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -277,7 +303,8 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/ic_life_insurance" />
+                                android:src="@drawable/ic_life_insurance"
+                                android:contentDescription="@string/life_insurance_accessibility" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -351,7 +378,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_pix" />
+                                android:src="@drawable/ic_pix"
+                                android:contentDescription="@string/pix_accessibility" />
 
                         </LinearLayout>
 
@@ -390,7 +418,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_barcode" />
+                                android:src="@drawable/ic_barcode"
+                                android:contentDescription="@string/barcode_accessibility" />
 
                         </LinearLayout>
 
@@ -429,7 +458,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_indicate" />
+                                android:src="@drawable/ic_indicate"
+                                android:contentDescription="@string/indicate_accessibility" />
 
                         </LinearLayout>
 
@@ -468,7 +498,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_transfer" />
+                                android:src="@drawable/ic_transfer"
+                                android:contentDescription="@string/transfer_accessibility" />
 
                         </LinearLayout>
 
@@ -507,7 +538,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_deposit" />
+                                android:src="@drawable/ic_deposit"
+                                android:contentDescription="@string/deposit_accessibility" />
 
                         </LinearLayout>
 
@@ -546,7 +578,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_credit_card" />
+                                android:src="@drawable/ic_credit_card"
+                                android:contentDescription="@string/credit_card_accessibility" />
 
                         </LinearLayout>
 
@@ -585,7 +618,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_phone" />
+                                android:src="@drawable/ic_phone"
+                                android:contentDescription="@string/mobile_top_us_accessibility" />
 
                         </LinearLayout>
 
@@ -613,7 +647,8 @@
                         android:padding="10dp"
                         android:orientation="vertical"
                         android:background="@color/card_menu_background"
-                        android:layout_marginEnd="10dp">
+                        android:layout_marginEnd="10dp"
+                        tools:ignore="TooManyViews">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -624,7 +659,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_adjust" />
+                                android:src="@drawable/ic_adjust"
+                                android:contentDescription="@string/adjust_accessibility" />
 
                         </LinearLayout>
 
@@ -663,7 +699,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_lock_card" />
+                                android:src="@drawable/ic_lock_card"
+                                android:contentDescription="@string/lock_card_accessibility" />
 
                         </LinearLayout>
 
@@ -702,7 +739,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_credit_card" />
+                                android:src="@drawable/ic_credit_card"
+                                android:contentDescription="@string/credit_card_accessibility" />
 
                         </LinearLayout>
 
@@ -741,7 +779,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_donate" />
+                                android:src="@drawable/ic_donate"
+                                android:contentDescription="@string/donate_accessibility" />
 
                         </LinearLayout>
 
@@ -780,7 +819,8 @@
                             <ImageView
                                 android:layout_width="@dimen/icon_size"
                                 android:layout_height="@dimen/icon_size"
-                                android:src="@drawable/ic_help_me" />
+                                android:src="@drawable/ic_help_me"
+                                android:contentDescription="@string/help_me_accessibility" />
 
                         </LinearLayout>
 

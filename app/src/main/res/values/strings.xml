@@ -1,6 +1,8 @@
 <resources>
 
     <string name="app_name">MyNubank</string>
+    <string name="created_by">Criado por:</string>
+    <string name="developer">Emanuel Rodrigues Galvão</string>
 
     <string name="hello_name">Olá, Emanuel</string>
 
@@ -21,6 +23,7 @@
     <string name="life_insurance">Seguro de vida</string>
     <string name="life_insurance_description">Conheça Nubank Vida: um seguro simples e que cabe no seu bolso.</string>
 
+    <!-- Menu Inferior -->
     <string name="pix">Pix</string>
     <string name="pay">Pagar</string>
     <string name="refer_friends">Indicar amigos</string>
@@ -33,5 +36,24 @@
     <string name="demand">Cobrar</string>
     <string name="donation">Doação</string>
     <string name="help_me">Me ajuda</string>
+
+    <!-- Acessibilidade em imagens -->
+    <string name="logo_accessibility">Letras N e U</string>
+    <string name="visible_accessibility">Olho para esconder e mostrar valores</string>
+    <string name="credit_card_accessibility">Cartão de crédito</string>
+    <string name="configuration_accessibility">Engrenagem de configuração</string>
+    <string name="account_accessibility">Moedas empilhadas</string>
+    <string name="rewards_accessibility">Presente</string>
+    <string name="life_insurance_accessibility">Guarda chuva</string>
+    <string name="pix_accessibility">Logo do pix</string>
+    <string name="barcode_accessibility">Código de barras</string>
+    <string name="indicate_accessibility">Pessoa com simbolo de adicionar</string>
+    <string name="transfer_accessibility">Notas com simbolo de troca</string>
+    <string name="deposit_accessibility">Notas com simbolo de deposito</string>
+    <string name="mobile_top_us_accessibility">Celular</string>
+    <string name="adjust_accessibility">Simbolo de ajuste de limite</string>
+    <string name="lock_card_accessibility">Cadeado</string>
+    <string name="donate_accessibility">Mão com moeda</string>
+    <string name="help_me_accessibility">Ponto de interrogação</string>
 
 </resources>
