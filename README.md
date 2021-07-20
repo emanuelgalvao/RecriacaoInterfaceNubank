@@ -1,20 +1,25 @@
-# Recriação Interface Nubank
+<div align="center">
+  <h2>Recriação Interface Nubank</h2>
+  
+  <p>Este projeto foi criado como forma de estudo da criação de interfaces em aplicativos.</p>
+  <p>Escolhi reproduzir a interface do aplicativo do <strong>Nubank</strong> devido ao aplicativo possuir um visual simples porém moderno.</p>
+  
+</div>
 
-Este projeto foi criado como forma de estudo da criação de interfaces em aplicativos.
+<div align="center">
+  <h2>Resultado do Projeto</h2>
+</div>
 
-Escolhi reproduzir a interface do aplicativo do **Nubank** devido ao aplicativo possuir um visual simples porém moderno.
+<div align="center" width="800px">
+  <img src="https://github.com/emanuelgalvao/RecriacaoInterfaceNubank/blob/master/readme/1.gif" width="380">
+  <img src="https://github.com/emanuelgalvao/RecriacaoInterfaceNubank/blob/master/readme/2.gif" width="380">
+</div>
 
-### O desenvolvimento foi realizado utilizando:
+<div align="left">
 
-- IDE Android Studio
-- Linguagem de marcação XML para criação da parte visual
-- Linguagem Java para tratamento de ações e manipulação de visual.
+  <h2 align="center">Recursos Utilizados</h2>
 
-### Resultado do projeto:
-
-![](https://im6.ezgif.com/tmp/ezgif-6-4277d98ff6e9.gif)
-![](https://im6.ezgif.com/tmp/ezgif-6-8c674aa0075b.gif)
-
-### Recursos utilizados:
-- Logo Nubank e cores: [Nubank](https://nubank.com.br/imprensa/)
-- Icones: [Icons8](https://icons8.com.br/)
+- IDE Android Studio <br>
+- Linguagem de marcação XML para criação da parte visual <br>
+- Linguagem Java para tratamento de ações e manipulação de visual <br>
+</div>
